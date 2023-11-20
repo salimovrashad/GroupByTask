@@ -95,7 +95,7 @@
 --Join Sell AS s ON s.ProductId = p.Id
 
 --TASK 3--
---SELECT p.Name, s.SellTime AS UmumiSatish FROM Product AS p
+--SELECT Sum(p.SellingPrice) - Sum(p.PurchasePrice) AS 'Bu aydaki satish' FROM Product AS p
 --Join Sell AS s ON s.ProductId = p.Id
 --WHERE MONTH(Getdate()) = MONTH(s.SellTime)
 
